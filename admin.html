@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>I.E. María Cano - Panel Admin</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <main class="panel-admin">
+        
+        <header class="header-admin">
+            <div>
+                <h1>I.E. MARÍA CANO | Sistema de Gestión de Daños</h1>
+                <p class="estado-usuario">Usuario: admin_general ● En Línea</p>
+            </div>
+
+            <a href="index.html" class="boton-salir">Cerrar Sesión</a>
+        </header>
+
+        <section class="seccion-tabla">
+            <h2>Historial de Reportes del Plantel</h2>
+            
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>ZONA</th>
+                        <th>DESCRIPCIÓN</th>
+                        <th>ESTADO</th>
+                        <th>ACCIÓN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#21312</td>
+                        <td>INFO 1</td>
+                        <td>VENTILADOR TRASERO HACE RUIDO EXCESIVO Y NO GIRA</td>
+                        <td class="estado pendiente">PENDIENTE</td>
+                        <td><a href="#">Ver detalle</a></td>
+                    </tr>
+                    <tr>
+                        <td>#2026</td>
+                        <td>INFO 1</td>
+                        <td>VENTILADOR MALO</td>
+                        <td class="estado pendiente">PENDIENTE</td>
+                        <td><a href="#">Ver detalle</a></td>
+                    </tr>
+                    <tr>
+                        <td>#2025</td>
+                        <td>RESTAURANTE</td>
+                        <td>MESA ROTA</td>
+                        <td class="estado proceso">EN PROCESO</td>
+                        <td><a href="#">Ver detalle</a></td>
+                    </tr>
+                    <tr>
+                        <td>#2024</td>
+                        <td>CASA VIEJA</td>
+                        <td>PARED CON HUMEDAD DETECTADA</td>
+                        <td class="estado resuelto">RESUELTO</td>
+                        <td><a href="#">Ver detalle</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>Formulario de control interno aplicado a la mejora continua de la calidad escolar.</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>

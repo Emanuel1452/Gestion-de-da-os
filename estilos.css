@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eef2f7;
+    font-family: Arial, sans-serif;
+}
+
+.tarjeta-login {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 360px;
+    padding: 30px;
+    border: 1px solid #d1d9e6;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.tarjeta-login h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #1e293b;
+}
+
+.tarjeta-login .subtitulo {
+    margin: 5px 0 25px 0;
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo-formulario label {
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #475569;
+}
+
+.campo-formulario input {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    font-size: 14px;
+}
+
+.boton-enviar {
+    background-color: #0f172a;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.estado-usuario {
+    margin: 15px 0 0 0;
+    text-align: center;
+    font-size: 13px;
+    color: #0284c7;
+    font-weight: bold;
+}
+
+.panel-admin {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 95%;
+    max-width: 900px;
+    padding: 25px;
+    border: 1px solid #d1d9e6;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.header-admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.header-admin h1 {
+    margin: 0;
+    font-size: 20px;
+    color: #1e293b;
+}
+
+.subtitulo-admin {
+    margin: 3px 0 0 0;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.header-admin .estado-usuario {
+    text-align: left;
+}
+
+.boton-salir {
+    background-color: #ef4444;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.seccion-tabla h2 {
+    font-size: 18px;
+    color: #334155;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 13px;
+}
+
+th {
+    background-color: #f8fafc;
+    color: #475569;
+    font-weight: bold;
+}
+
+td a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.estado {
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.pendiente { background-color: #f59e0b; }
+.proceso { background-color: #3b82f6; }
+.resuelto { background-color: #10b981; }
+
+.panel-admin footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+    body {
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    .tarjeta-login, .panel-admin {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .header-admin {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .boton-salir {
+        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .header-admin h1 {
+        font-size: 16px;
+    }
+    
+    th, td {
+        padding: 8px ;
+        font-size: 11px;
+    }
+}
